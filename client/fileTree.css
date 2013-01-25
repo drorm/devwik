@@ -1,0 +1,10 @@
+#devwikTreeRoot, #devwikTreeRoot li, #devwikFolderRoot, #devwikFolderRoot li, #devwikFRoot {
+	list-style-type:none;
+}
+#devwikTreeRoot i {
+	padding-right: 5px;
+}
+
+#fileDirTree .label-warning{
+	color:white;
+}

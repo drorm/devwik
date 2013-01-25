@@ -1,0 +1,22 @@
+<template name="settingsDialogPage">
+	<div style='display:none'>
+		<div id='settingsDialog'>
+			<form action='' class="ui-widget ui-state-default ui-corner-all">
+				<fieldset class="ui-widget-content">
+					<label for="name"> Choose Editing Style</label>
+					<span> <input type="radio" checked='checked' name="editorType" class="devwikInitialApp ui-widget-content ui-corner-all"
+								value='default'	/> Default. Not sure? use this one. </span> <br/><br/>
+						<span> <input type="radio" name="editorType" class="devwikInitialApp ui-widget-content ui-corner-all"
+									value='vim'	/>  Vim: Not full fledged but has the basics.</span><br/><br/>
+							<span> <input type="radio" name="editorType" class="devwikInitialApp ui-widget-content ui-corner-all"
+										value='emacs'	/> Emacs: Even more limited than vim</span><br/><br/>
+							</fieldset>
+						</form>
+						<div class='row'> <div class='span4 offset2'>
+								<h5 class="">Does not affect files already opened</h5>
+							</div> </div>
+					</div>
+				</div>
+			</template>
+
+

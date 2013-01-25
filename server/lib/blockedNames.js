@@ -1,0 +1,36 @@
+/*
+ * List of names we don't let users use as sign up name. The main reason is that we don't want them to have subdomains like test.devwik.com.
+ */
+Devwik.BlockedNames = [ 'about', 'abuse', 'ad', 'root', 'admin', 'administrator', 'affiliate', 'affiliates', 'api', 'biz', 'blog', 'buy', 'cache', 'clients', 'community', 'cpanel', 'dashboard', 'demo', 'deploy', 'dev', 'development', 'discussions', 'docs', 'feeds', 'files', 'forum', 'ftp', 'git', 'svn', 'help', 'home', 'http', 'https', 'images', 'img', 'jobs', 'join', 'login', 'logs', 'mail', 'my', 'new', 'news', 'partner', 'public', 'sandbox', 'search', 'secure', 'shop', 'signin', 'signup', 'sitemap', 'sites', 'smtp,', 'ssl', 'stage', 'static', 'status', 'store', 'support', 'svn', 'talk', 'test', 'trac', 'translate', 'webmail', 'webmaster', 'wiki', 'www',
+	//linux accounts
+'root',
+'daemon',
+'bin',
+'sys',
+'sync',
+'games',
+'man',
+'lp',
+'mail',
+'news',
+'uucp',
+'proxy',
+'www-data',
+'backup',
+'list',
+'irc',
+'gnats',
+'nobody',
+'libuuid',
+'syslog',
+'messagebus',
+'whoopsie',
+'landscape',
+'sshd',
+'ubuntu',
+'lxc-dnsmasq',
+'meteor',
+'devwik',
+'mongodb',
+'postfix'
+];

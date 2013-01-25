@@ -1,0 +1,19 @@
+<template name="initialDialogPage">
+	<div style='display:none'>
+		<div id='initialDialog'>
+			All the examples are part of <a href='http://meteor.com'>Meteor</a> and you can find out more info on the <a href='http://meteor.com/examples/leaderboard'>Meteor examples page</a>. 
+			You can switch this later.
+			<form action=''>
+				<fieldset>
+					<br/>
+					<label for="name"> Choose The Initial App</label> <br/> 
+					<input type="radio" checked='checked' name="devwikApp" value='hello'	/> Hello World. Does not get any simpler. <br/>
+					<input type="radio" name="devwikApp" value='leaderboard'	/>  Leaderboard: A live-updating high score list.<br/>
+					<input type="radio" name="devwikApp" value='todos'	/> Todos: A todo list with groups <br/>
+					<input type="radio" name="devwikApp" value='parties'	/> Parties: Track invitations and RSVPs to events. With d3.js animations.<br/>
+				</fieldset>
+			</form>
+		<div class="label label-default">Once you've set up your app, click on Wizard to create a custom application</div>
+		</div>
+	</div>
+</template>

@@ -1,0 +1,275 @@
+	<template name="devwikWizard">
+
+		<div id="devwikWizard" class="swMain">
+			<ul>
+				<li><a href="#step-1">
+						<label class="stepNumber">1</label>
+						<span class="stepDesc">
+							Login<br />
+							<small>Authentication</small>
+						</span>                   
+					</a></li>
+				<li><a href="#step-2">
+						<label class="stepNumber">2</label>
+						<span class="stepDesc">
+							Layout<br />
+							<small>Your Layout</small>
+						</span>
+					</a></li>
+				<li><a href="#step-3">
+						<label class="stepNumber">3</label>
+						<span class="stepDesc">
+							Theme<br />
+							<small>Your theme</small>
+						</span>
+					</a></li>
+				<li><a href="#step-4">
+						<label class="stepNumber">4</label>
+						<span class="stepDesc">
+							Pages<br />
+							<small>Your Pages </small>
+						</span>                   
+					</a></li>
+				<li><a href="#step-5">
+						<label class="stepNumber">5</label>
+						<span class="stepDesc">
+							Generate<br />
+							<small>Generate your app</small>
+						</span>                   
+					</a></li>
+			</ul>
+
+			<div id="step-1">
+				<h2 class="StepTitle">Choose authentication</h2>	
+				<br/>
+				<br/>
+				<div class="row"> <div class="offset2">
+						<h4>
+							Name your application
+						</h4>
+					</div> </div>
+				<div class='row'>
+				<div class="offset1 "> 		
+				<form class="form-horizontal"> 		
+					<div>
+						<div class="control-group">					
+							<div class="controls">					
+								<input id='appName' type="text" value='Cool Devwik App' name="Name" class="input" >
+							</div>
+						</div>
+					</div>		
+				</form>
+			</div>
+				<br/>
+				<br/>
+				<div class="row"> <div class="offset2">
+						<h4>
+							Do you want your application to include signup and login?
+						</h4>
+					</div> </div>
+				<br/>
+				<br/>
+				<br/>
+				<div class="row"> <div class="offset3">
+						<div class='row'>
+							<div id='authenticationButtons' class="offset 4 btn-group" data-toggle="buttons-radio">
+								<button id='yesAuth' type="button" class="btn btn-large active">Include Authentication</button>
+								<button id='noAuth' type="button" class="btn btn-large">No Authentication</button>
+							</div>
+						</div>
+					</div> </div>
+			</div>                      
+		</div>
+
+			<div id="step-2">
+				<h2 class="StepTitle">Choose your layout</h2>	
+				<div class="row"> <div class="offset1">
+						<h4>
+							Choose the layout for your home page. Other pages will have similar structure.
+						</h4>
+					</div> </div>
+				<div class='row'>
+					<div class='span10'>
+						<ul class="row layouts thumbnails">
+							<li class="span3">
+								<div id='hero' class="thumbnail layoutThumbnail">
+									<img src="wizard/bootstrap/hero.png" alt=""/>
+								</div>
+								<button id='heroButton' type="button" class="layoutButton btn btn-large">View full size</button>
+							</li>
+
+							<li class="span3">
+								<div id='fluid' class="thumbnail layoutThumbnail">
+									<img src="wizard/bootstrap/fluid.png" alt=""/>
+								</div>
+								<button id='fluidButton' type="button" class="layoutButton btn btn-large">View full size</button>
+							</li>
+
+							<li class="span3">
+								<div id='marketing' class="thumbnail layoutThumbnail">
+									<img src="wizard/bootstrap/marketing.png" alt=""/>
+								</div>
+								<button id='marketingButton' type="button" class="layoutButton btn btn-large">View full size</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div id="step-3">	
+				<h2 class="StepTitle">Choose your theme</h2>
+				<div class="row">
+					<div class="offset1 span4">
+						<h4>
+							Choose from the following themes
+						</h4>
+					</div>
+					<div class="offset1 span3">
+						<h5>
+							<a href = http://bootswatch.com/'>Powered by Bootswatch</a>
+						</h5>
+					</div>
+				</div>
+				<div class="row">
+					<div class="offset1">
+						<ul class="row thumbnails">
+							<li class="span2">
+								<div id='amelia' class="thumbnail">
+									<img src="wizard/thumbnails/amelia.png" class='themeThumbnail' alt=""/>
+								</div>
+								<button type="button" class="themeButton btn ">View full size</button>
+							</li>
+							<li class="span2">
+								<div id='cerulean' class="thumbnail">
+									<img src="wizard/thumbnails/cerulean.png" class='themeThumbnail' alt=""/>
+								</div>
+								<button type="button" class="themeButton btn ">View full size</button>
+							</li>
+							<li class="span2">
+								<div id='cosmo' class="thumbnail">
+									<img src="wizard/thumbnails/cosmo.png" class='themeThumbnail' alt=""/>
+								</div>
+								<button type="button" class="themeButton btn ">View full size</button>
+							</li>
+							<li class="span2">
+								<div id='cyborg' class="thumbnail">
+									<img src="wizard/thumbnails/cyborg.png" class='themeThumbnail' alt=""/>
+								</div>
+								<button type="button" class="themeButton btn ">View full size</button>
+							</li>
+							<li class="span2">
+								<div id='journal' class="thumbnail">
+									<img src="wizard/thumbnails/journal.png" class='themeThumbnail' alt=""/>
+								</div>
+								<button type="button" class="themeButton btn ">View full size</button>
+							</li>
+							<li class="span2">
+								<div id='readable' class="thumbnail">
+									<img src="wizard/thumbnails/readable.png" class='themeThumbnail' alt=""/>
+								</div>
+								<button type="button" class="themeButton btn ">View full size</button>
+							</li>
+							<li class="span2">
+								<div id='simplex' class="thumbnail">
+									<img src="wizard/thumbnails/simplex.png" class='themeThumbnail' alt=""/>
+								</div>
+								<button type="button" class="themeButton btn ">View full size</button>
+							</li>
+							<li class="span2">
+								<div id='slate' class="thumbnail">
+									<img src="wizard/thumbnails/slate.png" class='themeThumbnail' alt=""/>
+								</div>
+								<button type="button" class="themeButton btn ">View full size</button>
+							</li>
+							<li class="span2">
+								<div id='spacelab' class="thumbnail">
+									<img src="wizard/thumbnails/spacelab.png" class='themeThumbnail' alt=""/>
+								</div>
+								<button type="button" class="themeButton btn ">View full size</button>
+							</li>
+							<li class="span2">
+								<div id='spruce' class="thumbnail">
+									<img src="wizard/thumbnails/spruce.png" class='themeThumbnail' alt=""/>
+								</div>
+								<button type="button" class="themeButton btn ">View full size</button>
+							</li>
+							<li class="span2">
+								<div id='superhero' class="thumbnail">
+									<img src="wizard/thumbnails/superhero.png" class='themeThumbnail' alt=""/>
+								</div>
+								<button type="button" class="themeButton btn ">View full size</button>
+							</li>
+							<li class="span2">
+								<div id='united' class="thumbnail">
+									<img src="wizard/thumbnails/united.png" class='themeThumbnail' alt=""/>
+								</div>
+								<button type="button" class="themeButton btn ">View full size</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div id="step-4">
+				<h2 class="StepTitle">Initial Pages</h2>	
+
+				<form class="well  form-horizontal span9 "> 		
+					<fieldset>		
+						<div class="row"> <div class="offset1">
+								<h4>
+									Choose pages for your site. Blank fields don't get generated.
+								</h4>
+							</div> </div>
+						<div>
+							<div class="control-group">					
+								<div class="controls">					
+									<input type="text" value='Home' name="Name" class="input" >					
+								</div>					
+							</div>
+							<div class="control-group">					
+								<div class="controls">					
+									<input type="text" value ='Product' class="input" placeholder=>					
+								</div>					
+							</div>
+							<div class="control-group">					
+								<div class="controls">					
+									<input type="text" value='About' class="input" placeholder=>					
+								</div>					
+							</div>
+							<div class="control-group">					
+								<div class="controls">					
+									<input type="text" value='Contact' class="input" placeholder=>					
+								</div>					
+							</div>
+							<div class="control-group">					
+								<div class="controls">					
+									<input type="text" name="NumRating" class="input" placeholder=>					
+								</div>					
+							</div>
+							<div class="control-group">					
+								<div class="controls">					
+									<input type="text" name="NumRating" class="input" placeholder=>					
+								</div>					
+							</div>
+						</div>		
+					</fieldset>		
+				</form>
+			</div>
+
+
+			<div id="step-5">
+				<h2 class="StepTitle">Generate the application</h2>	
+				<br/>
+				<br/>
+				<div class="row"> <div class="offset2">
+						<h4>Here are your choices. Choose Finish to generate your app.</h4>
+					</div> </div>
+				<div class="row">
+					<div class="offset3">
+						<div id='step5Contenets'></div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</template>

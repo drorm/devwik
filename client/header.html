@@ -1,0 +1,57 @@
+<template name="headerPage">
+{{! Top Menu of the application }}
+<div class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar-inner">
+<div class="container">
+	<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	</a>
+	<a class="brand" href="#">Devwik</a>
+	<div class="nav-collapse collapse">
+		<p class="navbar-text pull-right login-buttons-dropdown-hangs-left"> 
+			{{loginButtons align="right"}}
+		</p>
+		{{#if currentUser}}
+		<ul class="nav">
+			<li class="dropdown">
+				<a href="#"
+						class="dropdown-toggle"  data-toggle="dropdown"> File <b class="caret"></b>  </a>
+					<ul id='themeList' class="dropdown-menu">
+						<li> <a id='newFile' href='#'>New File</a></li>
+						<li> <a id='newDirectory' href='#'>New Directory</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a href="#"
+							class="dropdown-toggle"  data-toggle="dropdown"> App <b class="caret"></b>  </a>
+						<ul id='themeList' class="dropdown-menu">
+							<li> <a id='appNewWindow' href='#'>App In New Browser Window</a></li>
+							<li> <a id='appConsole' href='#'>App Console</a></li>
+							<li><a id='restartApp'  href="#"> Restart App</a> </li>
+							<li><a id='downloadApp'  href="#"> Download App</a> </li>
+							<li class="divider"></li>
+							<li class="dropdown-submenu"><a id='restartApp'  href="#"> Switch App</a> 
+								<ul class="appsList dropdown-menu">
+									{{#each appsList}}
+									<li><a class='appList' onclick='Devwik.Menu.switchApp("{{name}}");' tabindex="-1" href="#">{{name}}</a></li>
+									{{/each}}
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a id='wizardMenu'  href="#">Wizard</a> </li>
+					<li><a id='setting'  href="#"> Settings</a> </li>
+					{{!
+					<li><a id='testMenu'  href="#"> Test</a> </li>
+					}}
+					<li> <a id='help' href='#'>Help</a></li>
+					</ul>
+					{{/if}}   
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>
+	</div>
+</template>
+

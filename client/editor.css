@@ -1,0 +1,107 @@
+/* CSS declarations go here */
+.hpTitle {
+	text-align: center;
+}
+
+#outer {
+		height: 90%;
+    width: 900px;
+    margin: 0 auto;    
+}
+
+.CodeMirror-scroll, .main #demo, .tabs{
+	    height: inherit;
+		}
+
+.osfile {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.osfile .name {
+    display: inline-block;
+    font-size: 1.75em;
+}
+
+.osfile .text {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    font-size: 2em;
+    font-weight: bold;
+    color: #777;
+}
+
+.osfile.selected {
+    background-color: yellow;
+}
+
+.osfile.selected .text {
+    color: black;
+}
+
+.details, .none {
+    font-weight: bold;
+    font-size: 2em;
+    border-style: dashed none none none;
+    border-color: #ccc;
+    border-width: 4px;
+    margin: 50px 10px;
+    padding: 10px 0px;
+}
+
+.none {
+    color: #777;
+}
+
+.inc {
+  cursor: pointer;
+}
+
+#dialog label, #dialog input { display:block; }
+#dialog label { margin-top: 0.5em; }
+#dialog input, #dialog textarea { width: 95%; }
+#tabs { margin-top: 1em; }
+#tabs li .ui-icon-close { float: left; margin: 0.4em 0.2em 0 0; cursor: pointer; }
+#add_tab { cursor: pointer; }
+
+/* From Meteor todos */
+.login-bar { 
+	float: right;
+	/* center login buttons vertically in our top bar */
+	padding: 10px 10px 0px 0px;
+}
+
+/* Overrided margin 4px in theme */
+input[type="radio"], input[type="checkbox"] {
+	margin: 0 !important;
+	padding: 4px;
+}
+
+#InitialDialog fieldset label {
+    font-size: 1.75em;
+}
+
+.listDirectory {
+	list-style-type: none;
+}
+
+.consoleLine {
+	padding-top:2px;
+}
+
+#consoleLines {
+overflow:auto;
+}
+
+#devwikCenter {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#devwikDoc a{
+	text-decoration: underline; color: #32a5e7;
+}

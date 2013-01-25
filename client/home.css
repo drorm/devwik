@@ -1,0 +1,56 @@
+/* 
+ * Home page CSS
+ */
+
+#signUpButton {
+	margin-top:30px;
+}
+
+
+.alphaButton {
+	float:right;
+	weight:strong;
+	-moz-border-radius: 25px;
+	-moz-box-shadow: #6E7849 -17px -7px 8px;
+	-moz-transform: rotate(45deg) scale(1.1);
+	-moz-transition: all 0.5s ease;
+	-ms-transform: rotate(45deg) scale(1.1);
+	-ms-transition: all 0.5s ease;
+	-o-transform: rotate(45deg) scale(1.1);
+	-o-transition: all 0.5s ease;
+	-webkit-border-radius: 25px;
+	-webkit-box-shadow: #6E7849 0 0 10px;
+	-webkit-transform: rotate(45deg) scale(1.1);
+	-webkit-transition: all 0.5s ease;
+	background-color: #c7ef34;
+	background-image: -moz-linear-gradient(90deg, #bfe830, #c7ef34);
+	background-image: -ms-linear-gradient(90deg, #bfe830, #c7ef34);
+	background-image: -o-linear-gradient(90deg, #bfe830, #c7ef34);
+	background-image: -webkit-linear-gradient(90deg, #bfe830, #c7ef34);
+	background-image: linear-gradient(90deg, #bfe830, #c7ef34);
+	border-radius: 25px;
+	box-shadow: #6E7849 -17px -7px 8px;
+	color: #ffffff;
+	display: inline-block;
+	font-size: 4em;
+	margin: auto;
+	padding: 25px;
+	text-decoration: none;
+	text-shadow: #000000 5px 5px 15px;
+	transform: rotate(45deg) scale(1.1);
+	transition: all 0.5s ease;
+}
+
+body { 
+	background: url(/images/construction.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding:-20px;
+	margin:-20px;
+}
+
+.thumbnail , #main {
+	background: white;
+}

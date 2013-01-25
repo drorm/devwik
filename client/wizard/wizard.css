@@ -1,0 +1,31 @@
+/* CSS declarations go here */
+.themeChosen {
+	border-width:5px;
+}
+
+.layoutThumbnail {
+	margin-top:10px;
+}
+.layoutThumbnail:hover, .span2 .thumbnail:hover {
+	background:yellow;
+	cursor: pointer;
+}
+
+.layouts {
+	margin-left:15px;
+	margin-top:10px;
+}
+
+.layoutButton {
+	margin-left:25px;
+	margin-top:10px;
+}
+
+/* 
+ * http://bugs.jqueryui.com/ticket/5466
+ * Wizard sets the z-index to 88, modal dialog to 1003.
+ * Need to increase the z-index or else can't input
+ */
+div#step-1.content, div#step-2.content, div#step-3.content, div#step-4.content, div#step-5.content {
+	z-index:2000;
+};

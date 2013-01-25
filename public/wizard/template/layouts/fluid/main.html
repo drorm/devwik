@@ -1,0 +1,29 @@
+<head>
+	<title>###siteName###</title>
+</head>
+
+<body>
+	{{> site}} 
+</body>
+
+<template name="site">
+{{!This is the main template for the site. It includes tha appropriate parts of all the other templates}}
+	{{> fluid-header}} 
+
+	<div class="container-fluid">
+		<div class="row-fluid">
+			{{> fluid-left}} 
+			<div class="span9">
+				{{renderPage}}
+			</div><!--/span-->
+			<hr>
+			</div><!--/row-->
+				{{> fluid-footer}} 
+		</div><!--/.fluid-container-->
+	</template>
+
+
+	<template name="initialTemplate">
+		{{!The home page}}
+				{{> devwikHome}} 
+	</template>

@@ -1,0 +1,100 @@
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<title>Devwik</title>
+	-   <link rel="stylesheet" href="/jqueryui/css/flick/jquery-ui-1.9.0.custom.css" type="text/css" />
+	<link rel="stylesheet" href="/bootstrap/css/bootstrap-responsive.css">
+		<link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+			<link rel="stylesheet" href="/bootstrap/css/cerulean.css">
+				<script type="text/javascript" src="/bootstrap/js/bootstrap.js"></script>
+				  <link href="/wizard/smartwizard/styles/smart_wizard.css" rel="stylesheet" type="text/css">
+				<script type="text/javascript" src="/wizard/smartwizard/js/jquery.smartWizard-2.0.js"></script>
+			</head>
+
+			<body>
+				{{> headerPage}}
+				<div class="container-fluid">
+
+					<div id='main' class="row-fluid" style='height: inherit;'>
+						{{#if currentUser}} {{! If the user is logged in}}
+						{{#if userConfigured}} {{! And they are configured}}
+						{{> devwikApp}}
+						{{> settingsDialogPage}} {{! Don't show up by default. Just load them hidden for now}}
+						{{> fileDirTreePage}} {{! Don't show up by default. Just load them hidden for now}}
+						{{/if}}  
+						{{> initialDialogPage}} {{! Don't show up by default. Just load them hidden for now}}
+						{{/if}}  
+					</div>
+					{{#unless currentUser}} {{! If the user is no logged in}}
+					{{> homePage}} {{! Display the home page}}
+					{{/unless}}  
+				</div>
+
+			</body>
+
+			<template name="devwikApp">
+				{{> editor}}
+
+				{{> devwikTabs}}
+				<div id='appOutput' class="span4">
+					{{! Output of app here }}
+				</div>
+
+						{{#if displayWizard}} {{! Do we need to display the wizard?}}
+							{{> devwikWizard}}
+						{{/if}}  
+
+			</template>
+
+			<template name="devwikTabs">
+				<div class="span5 appTabs">
+					<div class="demo">
+						{{! These are the tabs for the different files we're editing}}
+						<div id="tabs">
+							<ul>
+								<li><a href="#tabs-1">Intro</a> <span class="ui-icon ui-icon-close">Remove Tab</span></li>
+							</ul>
+							<div id="tabs-1">
+								<h1>Meteoric IDE</h1>
+								<p>Click on a file name to edit it. When you save it your app ill reload after a few seconds.</p>
+								<p>Create your own custom app by using the <strong> Wizard</strong>.</p>
+									<p> Any output from the server shows up under <strong> Server Output </strong> </p>
+									<h5> Problems? Reload the web page. </h5>
+									<p>It usually takes care of the issues </p>
+									Based on <a class='btn btn-white' target='_blank' href='http://www.meteor.com'> Meteor</a> 
+									<a  class='btn btn-white' target='_blank' href='http://codemirror.net/'> Code Mirror</a> 
+									<a  class='btn btn-white'  target='_blank' href='http://codemirror.net/'> Bootstrap</a>  and more
+								</div>
+							</div>
+						</div>
+					</div>
+				</template>
+
+				<template name="editor">
+					<div id='sideBar' class="span2 well sidebar-nav">
+						<h3>Files: {{appName}} </h3> 
+						{{> devwikFileTree}}
+						<div>
+							<h3> Server Output
+								<a id='clearConsole' class="btn btn btn-primary"> Clear</a>
+							</h3>
+							<div id='appsList' class="appsList">
+								<div id='consoleLines' class="consoleLines">
+									{{#each consoleLines}}
+									{{> consoleLine}} 
+									{{/each}}
+								</div>
+							</div>
+						</div>
+					</template>
+
+					<template name="consoleLine">
+						<small class='consoleLine'>
+							{{message}} <br/>
+						</small>
+					</template>
+
+					<template name="devwikFileTree">
+							<div class='fileTree' id="fileTree"> File Tree</div>
+					</template>
+
+

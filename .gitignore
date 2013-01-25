@@ -1,0 +1,8 @@
+.meteor/.gitignore
+todo
+Session.vim
+resources.md
+out
+public/doc
+public/downloads/
+devwik.out
